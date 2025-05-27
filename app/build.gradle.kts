@@ -6,7 +6,9 @@ plugins {
 android {
     namespace = "com.example.dictionary"
     compileSdk = 35
-
+    buildFeatures{
+        viewBinding = true
+    }
     defaultConfig {
         applicationId = "com.example.dictionary"
         minSdk = 30

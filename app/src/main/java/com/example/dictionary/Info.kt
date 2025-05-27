@@ -1,24 +1,18 @@
 package com.example.dictionary
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.dictionary.databinding.ActivityMainBinding
+import com.example.dictionary.databinding.ActivityInfoBinding
 
-class MainActivity : AppCompatActivity() {
-    lateinit var binding : ActivityMainBinding
+class Info : AppCompatActivity() {
+    lateinit var binding: ActivityInfoBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityInfoBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
-        binding.searchBtn.setOnClickListener {
-            var i = Intent(this,Info::class.java)
-            startActivity(i)
-        }
     }
 }
