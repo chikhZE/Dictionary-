@@ -14,5 +14,10 @@ class Info : AppCompatActivity() {
         binding = ActivityInfoBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        binding.searchedTxt.text = intent.getStringExtra("searchedTxt")
+        binding.phonetic.text = intent.getStringExtra("phonetic")
+        binding.definition.text = intent.getStringExtra("definition")
+        binding.partOfSpeech.text = intent.getStringExtra("partOfSpeech")
+
     }
 }

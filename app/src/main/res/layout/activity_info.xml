@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/searchedTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
@@ -28,7 +28,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/phonetic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -36,7 +36,7 @@
             android:textColor="@color/main_color"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toBottomOf="@+id/searchedTxt" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -44,8 +44,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            app:layout_constraintStart_toEndOf="@+id/textView5"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintStart_toEndOf="@+id/phonetic"
+            app:layout_constraintTop_toBottomOf="@+id/searchedTxt"
             app:srcCompat="@drawable/audio" />
 
         <androidx.cardview.widget.CardView
@@ -56,10 +56,10 @@
             app:cardBackgroundColor="@color/main_color"
             app:cardCornerRadius="6dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView5">
+            app:layout_constraintTop_toBottomOf="@+id/phonetic">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/partOfSpeech"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="20dp"
@@ -82,7 +82,7 @@
             app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/definition"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"

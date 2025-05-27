@@ -35,15 +35,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView">
 
-            <TextView
+            <EditText
+                android:id="@+id/searchBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#3D777777"
                 android:drawableStart="?android:attr/actionModeWebSearchDrawable"
+                android:drawablePadding="8dp"
+                android:hint="Search here"
+                android:inputType="text"
                 android:padding="10dp"
-                android:text="Search here"
-                android:textColor="#888888"
+                android:textColor="#000"
                 android:textSize="16sp" />
+
 
         </androidx.cardview.widget.CardView>
 
