@@ -1,6 +1,9 @@
 package com.example.dictionary
+import android.media.MediaPlayer
+import android.util.Log
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -18,6 +21,22 @@ class Info : AppCompatActivity() {
         binding.phonetic.text = intent.getStringExtra("phonetic")
         binding.definition.text = intent.getStringExtra("definition")
         binding.partOfSpeech.text = intent.getStringExtra("partOfSpeech")
+        binding.soundBtn.setOnClickListener {
+            playAudio(intent.getStringExtra("sound").toString())
+        }
 
+    }
+    private var mediaPlayer: MediaPlayer? = null
+    fun playAudio(audioPath: String) {
+        try {
+            mediaPlayer?.release()
+            mediaPlayer = MediaPlayer().apply {
+                setDataSource(audioPath)
+                prepare()
+                start()
+            }
+        } catch (e: Exception) {
+
+        }
     }
 }

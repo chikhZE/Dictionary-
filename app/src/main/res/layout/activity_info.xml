@@ -39,7 +39,7 @@
             app:layout_constraintTop_toBottomOf="@+id/searchedTxt" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/sound_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -90,6 +90,8 @@
             android:text="A wheeled vehicle that moves independently, with at least three wheels, powered mechanically, steered by a driver and mostly for personal transportation."
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
