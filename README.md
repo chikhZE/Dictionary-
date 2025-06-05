@@ -35,16 +35,15 @@
 
 ---
 
-## 📸 Screenshots (Add your screenshots here)
+## 📸 Screenshots 
 
-You can add screenshots using this syntax:
 
-```
+
 ![image](https://github.com/user-attachments/assets/180e57c7-a8ea-404d-8ccc-5501c39d8171)
 
 ![image](https://github.com/user-attachments/assets/343cbbc0-e26a-4f77-aa8e-21744aa33da5)
 
-```
+
 
 ---
 
